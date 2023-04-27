@@ -29,7 +29,7 @@ let searchCountry = () => {
   }
 };
 
-filteredArray = data => {
+let filteredArray = data => {
   if (data.length > 10) {
     clearCountries();
     Notiflix.Notify.info(
