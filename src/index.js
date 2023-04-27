@@ -42,7 +42,8 @@ filteredArray = data => {
       data
         .map(
           el =>
-            `<ul class="list-style"><li class="list-item"><img src="${el.flags.svg}"/></li><li class="list-item">${el.name.official}</li></ul>`
+            `<ul><li class="list-item"><img src="${el.flags.svg}"/>
+            </li><li class="list-item">${el.name.official}</li></ul>`
         )
         .join('')
     );
@@ -50,7 +51,7 @@ filteredArray = data => {
     clearCountries();
     countryInfo.insertAdjacentHTML(
       'beforeend',
-      `<ul class="list-style"><li class="list-item country-style">${
+      `<ul><li class="list-item country-style">${
         data[0].name.official
       }</li><li class="list-item"><img src="${
         data[0].flags.svg

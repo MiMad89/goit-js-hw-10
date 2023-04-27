@@ -1,5 +1,6 @@
 const API_URL = 'https://restcountries.com/v3.1';
-import Notiflix from "notiflix";
+// const FILTER = '?fields=name,capital,population,flags,languages';
+import Notiflix from 'notiflix';
 
 function fetchCountries(name) {
   return fetch(
